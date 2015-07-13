@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.caci.inventory.InventoryActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1.2"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/txtInventoryDesc"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblBarcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_barcode"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1.2"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/txtInvBarcode"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:inputType="text"
+            android:layout_weight="1.8"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_btn_scan"
+            android:id="@+id/btnScan"
+            android:layout_gravity="left"
+            android:layout_weight=".7"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_btn_save"
+        android:id="@+id/btnSave"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_btn_updateInv"
+        android:id="@+id/btnUpdateInv"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
